@@ -1,5 +1,9 @@
 # Hidden Markov Model – Würfelproblem (Viterbi-Dekodierung)
 
+**Hinweis:** vollständiges Projekt auf https://github.com/cyHeff5/bioinf-ss25-viterbi
+
+
+
 Dieses Programm implementiert ein **Hidden-Markov-Modell** (HMM) am Beispiel des klassischen Würfelproblems.  
 Es unterstützt die **Viterbi-Dekodierung** sowohl in normaler als auch in logarithmischer Skala.  
 Damit lassen sich Beobachtungssequenzen aus Würfelergebnissen analysieren und die wahrscheinlichste Abfolge von Zuständen (fairer oder gezinkter Würfel) bestimmen.

@@ -1,8 +1,5 @@
 import random
 from typing import List, Tuple
-import sys
-import os
-
 from src.hidden_markov_model import HMM
 
 class SequenceGenerator:

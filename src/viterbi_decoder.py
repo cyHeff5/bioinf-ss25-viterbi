@@ -1,7 +1,4 @@
 from typing import List, Dict
-import sys
-import os
-
 from src.hidden_markov_model import HMM
 
 class ViterbiDecoder:

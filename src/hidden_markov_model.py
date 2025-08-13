@@ -1,5 +1,5 @@
 import math
-from typing import List, Dict, Mapping
+from typing import List, Dict
 
 class HMM:
     def __init__(

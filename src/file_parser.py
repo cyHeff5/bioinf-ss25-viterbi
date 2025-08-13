@@ -1,15 +1,6 @@
 from typing import Tuple, List
 
 class FileParser:
-    """
-    Liest eine Datei mit zwei Zeilen:
-    - Erste Zeile: Zahlenfolge (z. B. Würfelergebnisse)
-    - Zweite Zeile: Zustände (z. B. F für fair, L für loaded)
-
-    Gibt zwei gleich lange Listen zurück:
-    - observations: Liste der beobachteten Zahlen als Strings
-    - states: Liste der zugehörigen echten Zustände als Strings
-    """
 
     @staticmethod
     def parse_file(filepath: str) -> Tuple[List[str], List[str]]:

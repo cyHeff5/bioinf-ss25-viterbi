@@ -1,5 +1,5 @@
 import math
-from typing import List, Dict
+from typing import List, Dict, Mapping
 
 class HMM:
     def __init__(
@@ -35,8 +35,21 @@ class HMM:
             if state not in self._transitions:
                 raise ValueError(f"Übergangswahrscheinlichkeiten fehlen für Zustand: {state}")
             if state not in self._emissions:
-                raise ValueError(f"Emissionswahrscheinlichkeiten fehlen für Zustand: {state}")
+                raise ValueError(f"Emissionswahrscheinlichkeiten fehlen für Zustand: {state}")    
         
+    # ---------- Getter ----------
+    def get_emission_row(self, state: str) -> dict:
+        """
+        Gibt die Emissionswahrscheinlichkeiten für einen Zustand zurück.
+        """
+        return dict(self._emissions[state])
+
+    def get_transition_row(self, state: str) -> dict:
+        """
+        Gibt die Übergangswahrscheinlichkeiten vom angegebenen Zustand zu allen anderen Zuständen zurück.
+        """
+        return dict(self._transitions[state])
+
     # ---------- Zugriff auf normale Wahrscheinlichkeiten ----------
     def get_start_prob_normal(self, state: str) -> float:
         """Gibt die Startwahrscheinlichkeit für einen Zustand zurück (normaler Wert, nicht im Log)."""

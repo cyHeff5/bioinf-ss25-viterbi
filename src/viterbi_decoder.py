@@ -2,7 +2,6 @@ from typing import List, Dict
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.hidden_markov_model import HMM
 
 class ViterbiDecoder:
